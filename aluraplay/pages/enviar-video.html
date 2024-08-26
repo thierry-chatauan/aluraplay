@@ -16,14 +16,14 @@
 
 <body>
 
-    <!-- Cabecalho -->
+    <!-- header -->
     <header>
 
-        <nav class="cabecalho">
+        <nav class="header">
             <a class="logo" href="../index.html"></a>
 
-            <div class="cabecalho__icones">
-                <a href="./enviar-video.html" class="cabecalho__videos"></a>
+            <div class="header__icons">
+                <a href="./enviar-video.html" class="header__videos"></a>
             </div>
         </nav>
 
@@ -31,28 +31,28 @@
 
     <main class="container">
 
-        <form class="container__formulario">
-            <h2 class="formulario__titulo">Envie um vídeo!</h3>
-                <div class="formulario__campo">
-                    <label class="campo__etiqueta" for="url">Link embed</label>
-                    <input name="url" class="campo__escrita" required
+        <form class="container__form">
+            <h2 class="form__title">Envie um vídeo!</h3>
+                <div class="form__field">
+                    <label class="field__sticker" for="url">Link embed</label>
+                    <input name="url" class="field__write" required
                         placeholder="Por exemplo: https://www.youtube.com/embed/FAY1K2aUg5g" id='url' />
                 </div>
 
 
-                <div class="formulario__campo">
-                    <label class="campo__etiqueta" for="titulo">Titulo do vídeo</label>
-                    <input name="titulo" class="campo__escrita" required placeholder="Neste campo, dê o nome do vídeo"
+                <div class="form__field">
+                    <label class="field__sticker" for="titulo">Titulo do vídeo</label>
+                    <input name="titulo" class="field__write" required placeholder="Neste campo, dê o nome do vídeo"
                         id='titulo' />
                 </div>
 
-                <div class="formulario__campo">
-                    <label class="campo__etiqueta" for="imagem">Imagem de perfil</label>
-                    <input name="imagem" class="campo__escrita" required placeholder="Insira a url da imagem"
+                <div class="form__field">
+                    <label class="field__sticker" for="imagem">Imagem de perfil</label>
+                    <input name="imagem" class="field__write" required placeholder="Insira a url da imagem"
                         id='imagem' />
                 </div>
 
-                <input class="formulario__botao" type="submit" />
+                <input class="form__button" type="submit" />
         </form>
 
     </main>

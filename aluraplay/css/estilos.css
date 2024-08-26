@@ -94,7 +94,7 @@ body {
     cursor: pointer;
 }
 
-.cabecalho__search {
+.header__search {
     display: flex;
     justify-content: center;
 }
