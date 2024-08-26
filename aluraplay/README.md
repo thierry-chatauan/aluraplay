@@ -10,7 +10,7 @@
 * NodeJS
 * Json-server
 
-## Used technologies
+## Technologies
 * HTML
 * CSS
 
