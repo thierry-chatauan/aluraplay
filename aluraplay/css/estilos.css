@@ -56,18 +56,18 @@ body {
     color: black;
 }
 
-.mensagem {
+.message {
     display: grid;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
-.mensagem__imagem {
+.message__image {
     width: 30%;
 }
 
-.mensagem__titulo {
+.message__title {
     color: var(--azul-medio);
     font-weight: bold;
     font-size: 21px;
