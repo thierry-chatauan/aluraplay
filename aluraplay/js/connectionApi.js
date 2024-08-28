@@ -1,5 +1,5 @@
 async function toListVideos() {
-  const connection = await fetch("http://localhost:3000/videos");
+  const connection = await fetch("https://json-alura-geek.vercel.app/videos");
   const convertedConnection = await connection.json();
   return convertedConnection;
 }
