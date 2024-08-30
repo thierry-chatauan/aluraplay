@@ -2,7 +2,7 @@ import { connectionApi } from "./connectionApi.js";
 
 const list = document.querySelector("[data-list]");
 
-function createCard(title, description, url, image) {
+export default function createCard(title, description, url, image) {
   const video = document.createElement("li");
   video.className = "videos__item";
   video.innerHTML = ` <iframe width="100%" height="72%" src="${url}"
@@ -19,15 +19,15 @@ function createCard(title, description, url, image) {
 }
 
 async function toListVideos() {
+  try{
   const listApi = await connectionApi.toListVideos();
-  listApi.forEach(element => {list.appendChild(
-    createCard(element.title, 
-               element.description, 
-               element.url, 
-               element.image
-            ))
-    
-  });
+  listApi.forEach(element => list.appendChild(
+    createCard(element.title, element.description, element.url, element.image)));
+  }catch{
+    list.innerHTML = `<h2 class= "message__title">
+    it was not possible to load your content
+    </h2>`
+  }
 }
 
 toListVideos()
